@@ -115,6 +115,7 @@ def get_games(scoreboard):
 	
 	gameType = 'go_game'
 	if (numberOfFinishedGames > 0):
+		print("Completed Games\n")
 		print("Team\t\t\tRuns\tHits\tErrors\n")
 		for game in scoreboard[gameType]:
 			for team in game['team']:
@@ -129,6 +130,7 @@ def get_games(scoreboard):
 			print()
 	gameType = 'ig_game'
 	if (numberOfInProgressGames > 0):
+		print("\nIn Progress Games\n")
 		print("Team\t\t\tRuns\tHits\tErrors")
 		for game in scoreboard[gameType]:
 			#print(game.keys())
